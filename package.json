@@ -6,8 +6,8 @@
   "description": "A boilerplate for cli apps.",
   "main": "app.js",
   "scripts": {
-    "startDev": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development electron .",
-    "start": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production electron .",
+    "startDev": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node dist/js/app.js",
+    "start": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node dist/js/app.js",
     "test": "ava",
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
